@@ -1,0 +1,206 @@
+/*Your Code Here*/
+/* PLEASE DO NOT REMOVE MY COMMENTS.  THEY HELP US HELP YOU DEBUG. */
+
+/* Step 1: Write selector/rule property to add an underline when
+links in the navigation are in the hover or focus state.*/
+nav a:hover{
+text-decoration: underline;
+}
+
+
+/* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+.skip a {
+     position: absolute;
+     top: -40px;
+     left: 0; 
+     padding: 10px; 
+     background-color: #fff; 
+     color: #000; 
+     text-decoration: none; 
+     z-index: 1000; 
+     transition: top 0.3s ease; 
+   }
+   
+   .skip a:focus {
+     top: 20px;
+   }
+   *:focus {
+     outline: none; 
+     border: 2px solid #000; 
+   }
+
+   .overview p {
+     color: white;
+     font-size: 24px;
+     padding: 0 100px;
+     text-align: center;
+   }
+
+/* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+
+
+/* Step 3: Write selector/rule property to style all elements when in focus*/
+
+
+
+/* Step 4: Write selector/rule property to style the container */
+/* .container class uses grid:
+Three columns: 1fr 5fr 1fr
+Gap of 15px between rows;
+Hint: review the Inspect Element images for this one*/
+
+.container{
+     display: grid;
+     grid-template-columns: 1fr 5fr 1fr;
+     row-gap: 15px; 
+
+}
+/* Step 5: Write selector/rule property to add the background image to the 
+first div in the grid  and place it in the grid. */
+.container div:first-child {
+     display: grid;
+     grid-column: 1/ -1;
+     background-image: url("../images/header.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+
+/* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
+ four rows in the grid. */
+
+      /*This will be a lot of rules.... but be strategic and combine seletors*/
+.about{
+     grid-column: 2 / span 1;
+     grid-row: 2/ span 1;
+}
+
+.method{
+     grid-column: 2 / span 1;
+     grid-row: 3/ span 1;
+}
+
+.clients{
+     grid-column: 2 / span 1;
+     grid-row: 4/ span 1;
+}
+
+
+.contact{
+     grid-column: 2 / span 1;
+     grid-row: 5/ span 1;
+}
+
+
+
+ /* Step 8: Write the selector/rule property to style the .text-block class. */
+.about-image{
+     grid-column: 1 / -1;
+     max-height: 600px;
+     overflow: hidden; 
+     grid-row: 2/ span 1;
+}
+.method-image{
+     grid-column: 1 / -1;
+     max-height: 600px;
+     overflow: hidden; 
+     grid-row: 3/ span 1;
+}
+.clients-image{
+     grid-column: 1 / -1;
+     max-height: 600px;
+     overflow: hidden; 
+     grid-row: 4/ span 1;
+}
+.contact-image{
+     grid-column: 1 / -1;
+     max-height: 600px;
+     overflow: hidden; 
+     grid-row: 5/ span 1;
+     
+}
+
+.text-block{
+     display: grid;
+     align-items: center;
+     text-align: center;
+     margin: auto;
+}
+
+/* Add your media query here */
+
+@media screen and (min-width: 800px) {
+
+nav {
+     text-align: right;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+.container{
+     display: grid;
+     grid-template-columns: 50px auto 500px auto 50px;
+}
+.about{
+     grid-column: 3 / span 2;
+}
+.clients{
+     grid-column: 3 / span 2;
+}
+
+
+.method-image{
+     grid-column: 3 / span 2;
+
+}
+
+.contact-image{
+     grid-column: 3 / span 2;
+     
+}
+
+.method{
+     grid-column: 2 / span 2;
+}
+
+
+
+.contact{
+     grid-column:2 / span 2;
+}
+.about-image{
+     grid-column: 2 / span 2;
+
+}
+.clients-image{
+     grid-column: 2 / span 2;
+     
+}
+
+.text-block{
+     max-height: 250px; 
+     overflow: auto;
+    
+     
+}
+
+
+
+}
+
+  /* Step 9: Write the selector/rule property to style the nav element */
+  
+  /* Step 10: Write the selector/rule property to update the .container class */
+
+
+  /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
+
+
+
+ /* Step 13:Write the selector/rule property to update the .text-block class */
+
