@@ -58,13 +58,13 @@ Hint: review the Inspect Element images for this one*/
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
 .container div:first-child {
-     display: grid;
+     /* display: grid; */
      grid-column: 1/ -1;
      background-image: url("../images/header.jpg");
-     background-attachment: fixed;
-     background-position: center;
+     /* background-attachment: fixed; */
+     /* background-position: center; */
      background-repeat: no-repeat;
-     background-size: cover;
+     /* background-size: cover; */
 }
 
 
